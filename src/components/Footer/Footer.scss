@@ -1,0 +1,66 @@
+@import '../../global.scss';
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.left {
+  flex: 2;
+}
+
+.right {
+  flex: 1;
+  margin-left: 2.44rem;
+
+  &.lower {
+    margin-top: 5.64rem;
+  }
+
+  @media (max-width: 768px) {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+}
+
+.address {
+  margin-top: 2rem;
+  line-height: 150%;
+}
+
+.socials {
+  margin-top: 5.64rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (max-width: 768px) {
+    margin-bottom: 1rem;
+  }
+}
+
+a {
+  color: #FFFFFF;
+}

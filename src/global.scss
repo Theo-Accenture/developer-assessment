@@ -1,0 +1,14 @@
+.primary {
+  background: #70259B;
+  color: #FFFFFF;
+}
+
+.negative-primary {
+  background: #FFFFFF;
+  color: #70259B;
+}
+
+@mixin line-height-150 {
+  line-height: 150%;
+  font-size: 1.25rem;
+}

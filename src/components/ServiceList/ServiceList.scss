@@ -1,0 +1,26 @@
+@import '../../global.scss';
+
+.services {
+  h1 {
+    text-align: left;
+    margin-bottom: 3.38rem;
+  }
+
+  .service-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.5%;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+}
+
+.service-item {
+  text-align: left;
+  margin-right: 2.5rem;
+  line-height: 150%;
+}

@@ -1,0 +1,39 @@
+@import './global.scss';
+
+button {
+  border-style: none;
+  padding: 0.5rem 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 1.25rem;
+}
+
+.hero {
+  padding-left: 5%;
+  text-align: left;
+  background: url('assets/confidence.jpeg') no-repeat center center;
+  background-size: cover;
+  color: #FFFFFF;
+  height: 37.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding-bottom: 5.38rem;
+}
+
+.foo {
+  width: 90%;
+}
+
+.App {
+  text-align: center;
+
+}
+
+.footer-wrapper {
+  @extend .primary;
+  width: 100%;
+  padding-top: 0.25rem;
+}

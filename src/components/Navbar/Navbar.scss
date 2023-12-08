@@ -1,0 +1,82 @@
+@import '../../global.scss';
+
+nav {
+    @extend .primary;
+    top: 0;
+    left: 0;
+    height: 5rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+  
+  .menu {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+    button {
+      &:hover {
+        @extend .negative-primary;
+      }
+
+      @media (max-width: 768px) {
+        color: #000000;
+        background-color: #FFFFFF;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    background-color: #FFFFFF;
+      
+    .menu {
+      display: none;
+
+      &.open {
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        position: absolute;
+        margin-top: 5rem;
+        top: 0;
+        left: 0;
+        color: #000000;
+        background-color: #FFFFFF;
+      }
+    }
+    .talk {
+      display: none;
+    }
+  }
+}
+
+.brand-icon {
+  @media (max-width: 768px) {
+    filter: invert(100%) hue-rotate(273deg);
+    margin-right: 50%;
+  }
+}
+
+.hamburger {
+  display: none;
+  width: 2rem;
+  height: 2rem;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  z-index: 10;
+
+  .line {
+    width: 2rem;
+    height: 0.25rem;
+    border-radius: 10px;
+    background-color: black;
+    transform-origin: 1px;
+    transition: all 0.3s linear;
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
+  }
+}
